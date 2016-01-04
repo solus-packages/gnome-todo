@@ -1,0 +1,40 @@
+<PISI>
+    <Source>
+        <Name>gnome-todo</Name>
+        <Homepage>https://wiki.gnome.org/Apps/Todo</Homepage>
+        <Packager>
+            <Name>Vincent Hourdel</Name>
+            <Email>vincent.hourdel@gmail.com</Email>
+        </Packager>
+        <License>GPL-3.0</License>
+        <Summary xml:lang="en">Minimalistic personal task manager designed to fit GNOME desktop</Summary>
+        <Description xml:lang="en">GNOME To Do is a simplistic personal task manager designed to perfectly fit the GNOME desktop. Designed from ground up to seamlessly integrate with the GNOME desktop environment, To Do enables you to be as productive as you want.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>gnome-todo</Name>
+        <Summary xml:lang="en">Minimalistic personal task manager designed to fit GNOME desktop</Summary>
+        <Description xml:lang="en">GNOME To Do is a simplistic personal task manager designed to perfectly fit the GNOME desktop. Designed from ground up to seamlessly integrate with the GNOME desktop environment, To Do enables you to be as productive as you want.
+</Description>
+        <PartOf>desktop.gnome</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/appdata</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/glib-2.0</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2016-01-04</Date>
+            <Version>3.18.1</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Vincent Hourdel</Name>
+            <Email>vincent.hourdel@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
