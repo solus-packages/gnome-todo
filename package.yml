@@ -1,9 +1,9 @@
 name        : gnome-todo
 version     : 3.18.1
-release     : 1
+release     : 2
 homepage    : https://wiki.gnome.org/Apps/Todo
-source      :
-    - https://git.gnome.org/browse/gnome-todo/snapshot/GNOME_TODO_3_18_1.tar.xz : 52cd2eabb7f46d8f67f2047e6ce158d51fa28e319893c2b19bd399520cbbbbdc
+source     :
+    - http://ftp.gnome.org/pub/gnome/sources/gnome-todo/3.18/gnome-todo-3.18.1.tar.xz : 7da17c39f46accb897b8af159f6accabc4e2afa4503d8d36138b5937cf5bcc51
 license     : GPL-3.0
 summary     : Minimalistic personal task manager designed to fit GNOME desktop
 builddeps   :
@@ -18,7 +18,7 @@ builddeps   :
 description : |
     GNOME To Do is a simplistic personal task manager designed to perfectly fit the GNOME desktop. Designed from ground up to seamlessly integrate with the GNOME desktop environment, To Do enables you to be as productive as you want.
 setup       : |
-    ./autogen.sh --prefix=/usr --disable-schemas-compile
+    %configure --disable-schemas-compile
 build       : |
     %make
 install     : |
