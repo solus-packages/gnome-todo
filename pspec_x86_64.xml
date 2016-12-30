@@ -3,11 +3,11 @@
         <Name>gnome-todo</Name>
         <Homepage>https://wiki.gnome.org/Apps/Todo</Homepage>
         <Packager>
-            <Name>Ikey Doherty</Name>
-            <Email>ikey@solus-project.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Packager>
         <License>GPL-3.0</License>
-        <PartOf>office</PartOf>
+        <PartOf>office.notes</PartOf>
         <Summary xml:lang="en">Minimalistic personal task manager designed to fit GNOME desktop</Summary>
         <Description xml:lang="en">GNOME To Do is a simplistic personal task manager designed to perfectly fit the GNOME desktop. Designed from ground up to seamlessly integrate with the GNOME desktop environment, To Do enables you to be as productive as you want.
 </Description>
@@ -18,7 +18,7 @@
         <Summary xml:lang="en">Minimalistic personal task manager designed to fit GNOME desktop</Summary>
         <Description xml:lang="en">GNOME To Do is a simplistic personal task manager designed to perfectly fit the GNOME desktop. Designed from ground up to seamlessly integrate with the GNOME desktop environment, To Do enables you to be as productive as you want.
 </Description>
-        <PartOf>office</PartOf>
+        <PartOf>office.notes</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib64/girepository-1.0/Gtd-1.0.typelib</Path>
@@ -45,7 +45,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="4">gnome-todo</Dependency>
+            <Dependency release="5">gnome-todo</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -53,12 +53,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="4">
+        <Update release="5">
             <Date>2016-08-07</Date>
             <Version>3.20.2</Version>
             <Comment>Packaging update</Comment>
-            <Name>Ikey Doherty</Name>
-            <Email>ikey@solus-project.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Update>
     </History>
 </PISI>
