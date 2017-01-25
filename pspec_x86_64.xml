@@ -3,8 +3,8 @@
         <Name>gnome-todo</Name>
         <Homepage>https://wiki.gnome.org/Apps/Todo</Homepage>
         <Packager>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Peter O&apos;Connor</Name>
+            <Email>sunnyflunk@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
         <PartOf>office.notes</PartOf>
@@ -22,6 +22,10 @@
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib64/girepository-1.0/Gtd-1.0.typelib</Path>
+            <Path fileType="library">/usr/lib64/gnome-todo/plugins/score/score.plugin</Path>
+            <Path fileType="library">/usr/lib64/gnome-todo/plugins/score/score/__init__.py</Path>
+            <Path fileType="library">/usr/lib64/gnome-todo/plugins/unscheduled-panel/unscheduled-panel.plugin</Path>
+            <Path fileType="library">/usr/lib64/gnome-todo/plugins/unscheduled-panel/unscheduled-panel/__init__.py</Path>
             <Path fileType="data">/usr/share/appdata/org.gnome.Todo.appdata.xml</Path>
             <Path fileType="data">/usr/share/applications/org.gnome.Todo.desktop</Path>
             <Path fileType="data">/usr/share/dbus-1/services/org.gnome.Todo.service</Path>
@@ -45,20 +49,30 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="5">gnome-todo</Dependency>
+            <Dependency release="6">gnome-todo</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
             <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
         </Files>
     </Package>
+    <Package>
+        <Name>gnome-todo-docs</Name>
+        <Summary xml:lang="en">Documentation for gnome-todo</Summary>
+        <Description xml:lang="en">GNOME To Do is a simplistic personal task manager designed to perfectly fit the GNOME desktop. Designed from ground up to seamlessly integrate with the GNOME desktop environment, To Do enables you to be as productive as you want.
+</Description>
+        <PartOf>programming.docs</PartOf>
+        <Files>
+            <Path fileType="doc">/usr/share/gtk-doc/html/</Path>
+        </Files>
+    </Package>
     <History>
-        <Update release="5">
-            <Date>2016-08-07</Date>
-            <Version>3.20.2</Version>
+        <Update release="6">
+            <Date>2016-12-30</Date>
+            <Version>3.22.1</Version>
             <Comment>Packaging update</Comment>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Peter O&apos;Connor</Name>
+            <Email>sunnyflunk@gmail.com</Email>
         </Update>
     </History>
 </PISI>
