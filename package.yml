@@ -1,6 +1,6 @@
 name       : gnome-todo
 version    : 3.22.1
-release    : 6
+release    : 7
 homepage   : https://wiki.gnome.org/Apps/Todo
 source     :
     - http://ftp.gnome.org/pub/gnome/sources/gnome-todo/3.22/gnome-todo-3.22.1.tar.xz : cb80f64f5edeeac7b221146d2203bd1bebc49d275b7a41e7a5418f409d9c74af
