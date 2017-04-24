@@ -1,9 +1,9 @@
 name       : gnome-todo
-version    : 3.22.1
-release    : 7
+version    : 3.24.0.1
+release    : 8
 homepage   : https://wiki.gnome.org/Apps/Todo
 source     :
-    - http://ftp.gnome.org/pub/gnome/sources/gnome-todo/3.22/gnome-todo-3.22.1.tar.xz : cb80f64f5edeeac7b221146d2203bd1bebc49d275b7a41e7a5418f409d9c74af
+    - https://download.gnome.org/sources/gnome-todo/3.24/gnome-todo-3.24.0.1.tar.xz : 65311020613322c03b05dc6e7fac32c7d5ee3529f1a76ba2533a2fb998ed35cb
 license    : GPL-3.0
 component  : office.notes
 summary    : Minimalistic personal task manager designed to fit GNOME desktop
