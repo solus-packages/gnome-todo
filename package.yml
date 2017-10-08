@@ -1,9 +1,9 @@
 name       : gnome-todo
-version    : 3.24.2
-release    : 10
+version    : 3.26.1
+release    : 11
 homepage   : https://wiki.gnome.org/Apps/Todo
 source     :
-    - https://download.gnome.org/sources/gnome-todo/3.24/gnome-todo-3.24.2.tar.xz : 6985c75b9dd5883ed03af2b9ab9aa004152401ce455feb916248337e8077f8d4
+    - https://download.gnome.org/sources/gnome-todo/3.26/gnome-todo-3.26.1.tar.xz : e4d390bd73ed2808e3de7f215a9584317d1cc9c6a7f802cf1fbb984c1e152e8e
 license    : GPL-3.0
 component  : office.notes
 summary    : Minimalistic personal task manager designed to fit GNOME desktop
@@ -14,14 +14,18 @@ builddeps  :
     - pkgconfig(evolution-data-server-1.2)
     - pkgconfig(goa-1.0)
     - pkgconfig(gtk+-3.0)
+    - pkgconfig(json-glib-1.0)
     - pkgconfig(libical)
     - pkgconfig(libsecret-1)
-    - pkgconfig(libsoup-2.4)
     - pkgconfig(libpeas-1.0)
+    - pkgconfig(rest-0.7)
     - gnome-common
+    - gtk-doc
 setup      : |
-    %configure --disable-schemas-compile
+    %patch -p1 < $pkgfiles/fix-docs-build-file.patch
+    %patch -p1 < $pkgfiles/fix-docs-src-dir.patch
+    %meson_configure -Denable-gtk-doc=true
 build      : |
-    %make
+    %meson_build
 install    : |
-    %make_install
+    %meson_install
