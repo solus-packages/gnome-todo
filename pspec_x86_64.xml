@@ -3,8 +3,8 @@
         <Name>gnome-todo</Name>
         <Homepage>https://wiki.gnome.org/Apps/Todo</Homepage>
         <Packager>
-            <Name>Bryan T. Meyers</Name>
-            <Email>bmeyers@datadrake.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Packager>
         <License>GPL-3.0</License>
         <PartOf>office.notes</PartOf>
@@ -42,7 +42,7 @@
             <Path fileType="data">/usr/share/icons/hicolor/512x512/apps/org.gnome.Todo.png</Path>
             <Path fileType="data">/usr/share/icons/hicolor/symbolic/apps/org.gnome.Todo-symbolic.svg</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="data">/usr/share/metainfo/org.gnome.Todo.metainfo.xml</Path>
+            <Path fileType="data">/usr/share/metainfo/org.gnome.Todo.appdata.xml</Path>
         </Files>
     </Package>
     <Package>
@@ -52,7 +52,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="11">gnome-todo</Dependency>
+            <Dependency release="12">gnome-todo</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -70,12 +70,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="11">
-            <Date>2017-10-08</Date>
-            <Version>3.26.1</Version>
+        <Update release="12">
+            <Date>2017-10-31</Date>
+            <Version>3.26.2</Version>
             <Comment>Packaging update</Comment>
-            <Name>Bryan T. Meyers</Name>
-            <Email>bmeyers@datadrake.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Update>
     </History>
 </PISI>

@@ -1,9 +1,9 @@
 name       : gnome-todo
-version    : 3.26.1
-release    : 11
+version    : 3.26.2
+release    : 12
 homepage   : https://wiki.gnome.org/Apps/Todo
 source     :
-    - https://download.gnome.org/sources/gnome-todo/3.26/gnome-todo-3.26.1.tar.xz : e4d390bd73ed2808e3de7f215a9584317d1cc9c6a7f802cf1fbb984c1e152e8e
+    - https://download.gnome.org/sources/gnome-todo/3.26/gnome-todo-3.26.2.tar.xz : c9b90048b62b4e6fe7cd7e9675be9a838d65e297584c308bacb25f1478e8dd80
 license    : GPL-3.0
 component  : office.notes
 summary    : Minimalistic personal task manager designed to fit GNOME desktop
@@ -22,8 +22,6 @@ builddeps  :
     - gnome-common
     - gtk-doc
 setup      : |
-    %patch -p1 < $pkgfiles/fix-docs-build-file.patch
-    %patch -p1 < $pkgfiles/fix-docs-src-dir.patch
     %meson_configure -Denable-gtk-doc=true
 build      : |
     %meson_build
