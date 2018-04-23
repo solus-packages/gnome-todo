@@ -3,8 +3,8 @@
         <Name>gnome-todo</Name>
         <Homepage>https://wiki.gnome.org/Apps/Todo</Homepage>
         <Packager>
-            <Name>Pierre-Yves</Name>
-            <Email>pyu@riseup.net</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Packager>
         <License>GPL-3.0-only</License>
         <PartOf>office.notes</PartOf>
@@ -52,30 +52,20 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="13">gnome-todo</Dependency>
+            <Dependency release="14">gnome-todo</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
             <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
         </Files>
     </Package>
-    <Package>
-        <Name>gnome-todo-docs</Name>
-        <Summary xml:lang="en">Documentation for gnome-todo</Summary>
-        <Description xml:lang="en">GNOME To Do is a simplistic personal task manager designed to perfectly fit the GNOME desktop. Designed from ground up to seamlessly integrate with the GNOME desktop environment, To Do enables you to be as productive as you want.
-</Description>
-        <PartOf>programming.docs</PartOf>
-        <Files>
-            <Path fileType="doc">/usr/share/gtk-doc/html/</Path>
-        </Files>
-    </Package>
     <History>
-        <Update release="13">
-            <Date>2018-04-09</Date>
-            <Version>3.26.2</Version>
+        <Update release="14">
+            <Date>2018-04-23</Date>
+            <Version>3.28.1</Version>
             <Comment>Packaging update</Comment>
-            <Name>Pierre-Yves</Name>
-            <Email>pyu@riseup.net</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Update>
     </History>
 </PISI>
